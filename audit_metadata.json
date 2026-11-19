@@ -1,0 +1,45 @@
+{
+  "source_repo": "frappe/frappe",
+  "source_url": "https://github.com/frappe/frappe",
+  "audit_date": "2026-11-19T09:38:40.976418",
+  "scanner_version": "1.3.0",
+  "findings_count": 4,
+  "severity_breakdown": {
+    "HIGH": 2,
+    "CRITICAL": 2
+  },
+  "findings": [
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "frappe/integrations/doctype/google_settings/test_google_settings.py",
+      "line": 15
+    },
+    {
+      "id": "PY-CRED-001",
+      "name": "Hardcoded credentials",
+      "severity": "HIGH",
+      "cwe": "CWE-798",
+      "file": "frappe/utils/test_print_format_generator.py",
+      "line": 291
+    },
+    {
+      "id": "PY-SQLI-001",
+      "name": "SQL injection via string formatting",
+      "severity": "CRITICAL",
+      "cwe": "CWE-89",
+      "file": "frappe/core/doctype/duckdb_sync/duckdb_sync.py",
+      "line": 113
+    },
+    {
+      "id": "PY-SQLI-001",
+      "name": "SQL injection via string formatting",
+      "severity": "CRITICAL",
+      "cwe": "CWE-89",
+      "file": "frappe/core/doctype/duckdb_sync/duckdb_sync.py",
+      "line": 209
+    }
+  ]
+}
